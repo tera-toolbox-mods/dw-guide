@@ -1,9 +1,6 @@
-### NOTICE REGARDING ENMASSE ENTERTAINMENT (NA) TERA
-This software in this repository does not work in combination with the NA version of TERA hosted by EME (neither PC, nor PS4/XB1 servers). It contains no intellectual property belonging to them.
-
 # DW-Guide
 
-Original mod by YunfeiG.
+Original mod by YunfeiG (https://github.com/YunfeiG/dw-guide).
 
 Call out mechanics to yourself or the party.
 

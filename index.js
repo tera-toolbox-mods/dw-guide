@@ -48,7 +48,7 @@ module.exports = function DWGuide(mod) {
 
         if (event.huntingZoneId === DW) {
             if([BANDERSNATCH, DEMOROS].includes(event.templateId)) {
-                if (boss && event.templateId === BANDERSNATCH && !event.id.equals(boss.id))
+                if (boss && event.templateId === BANDERSNATCH && event.id !== boss.id)
                     circlecount = 0;
                 boss = event;
             }
@@ -59,7 +59,7 @@ module.exports = function DWGuide(mod) {
     });
 
     mod.hook('S_ACTION_STAGE', mod.majorPatchVersion >= 75 ? 8 : 7, (event) => {
-        if (!mod.settings.enabled || !boss || !event.gameId.equals(boss.id))
+        if (!mod.settings.enabled || !boss || event.gameId !== boss.id)
             return;
 
         switch(boss.templateId) {
@@ -158,7 +158,7 @@ module.exports = function DWGuide(mod) {
         if (!mod.settings.enabled || !boss || !ball)
             return;
 
-        if(event.gameId.equals(ball.gameId)){
+        if(event.gameId === ball.gameId){
             if(Math.abs(event.loc.x+21927.0)<200 && Math.abs(event.loc.y-43462.6)<200) color = 0;
             if(Math.abs(event.loc.x+23881.0)<200 && Math.abs(event.loc.y-42350.3)<200) color = 0;
             if(Math.abs(event.loc.x+22896.0)<200 && Math.abs(event.loc.y-41786.0)<200) color = 1;

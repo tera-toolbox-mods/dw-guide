@@ -54,7 +54,7 @@ module.exports = function DWGuide(mod) {
             }
         }
 
-        if (boss && boss.curHp <= 0)
+        if (boss && boss.curHp <= 0n)
             boss = null;
     });
 

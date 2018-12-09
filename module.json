@@ -1,5 +1,9 @@
 {
     "disableAutoUpdate": false,
+    "name": "dw-guide",
+    "author": "Caali / YunfeiG",
+    "description": "Guide module for Demon's Wheel",
+    "version": "1.0",
     "options": {
         "niceName": "Demon's Wheel Guide",
         "settingsVersion": 1,

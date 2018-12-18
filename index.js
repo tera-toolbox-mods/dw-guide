@@ -9,6 +9,10 @@ const dices = {
 };
 
 module.exports = function DWGuide(mod) {
+    if(mod.proxyAuthor !== 'caali')
+        mod.warn('You are trying to use Demon\'s Wheel Guide on an unsupported version of tera-proxy. It may not work as expected, and even if it does now it may break at any point in the future!');
+
+
     let boss = null;
     let ball = null;
     let color; // 0: red, 1: blue, 2: white
@@ -58,7 +62,7 @@ module.exports = function DWGuide(mod) {
             boss = null;
     });
 
-    mod.hook('S_ACTION_STAGE', mod.majorPatchVersion >= 75 ? 8 : 7, (event) => {
+    mod.hook('S_ACTION_STAGE', 8, (event) => {
         if (!mod.settings.enabled || !boss || event.gameId !== boss.id)
             return;
 

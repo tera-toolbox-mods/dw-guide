@@ -142,7 +142,7 @@ module.exports = function DWGuide(mod) {
         }
     });
 
-    mod.hook('S_SPAWN_NPC', 9, (event) => {
+    mod.hook('S_SPAWN_NPC', mod.majorPatchVersion >= 79 ? 11 : 10, (event) => {
         if (!mod.settings.enabled || !boss || event.huntingZoneId !== DW)
             return;
 

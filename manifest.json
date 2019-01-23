@@ -1,13 +1,13 @@
 {
     "files": {
         "module.json": "d59414f6d2a851c7e9a9ed41b7cece5bd22dd2a4abe239710773da9aef19c11f",
-        "index.js": "2dfad8dae00742fe321b052a0109c242bfe00721d0ac853e96c13cc17217ea3d",
+        "index.js": "fcc15508370ae80cbb5681d085c004147d1b2088b1732572aa6a696294daea23",
         "settings_migrator.js": "4cf2cdf69437ca275cf61c0886786425f53d7dab762170efa41f2c8e834c03c3"
     },
     "defs": {
         "S_BOSS_GAGE_INFO": 3,
         "S_ACTION_STAGE": 8,
-        "S_SPAWN_NPC": [10, 11],
+        "S_SPAWN_NPC": 11,
         "S_DESPAWN_NPC": 3
     }
 }

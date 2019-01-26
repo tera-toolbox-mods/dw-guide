@@ -9,8 +9,11 @@ const dices = {
 };
 
 module.exports = function DWGuide(mod) {
-    if(mod.proxyAuthor !== 'caali' || !global.TeraProxy)
-        mod.warn('You are trying to use Demon\'s Wheel Guide on an unsupported version of tera-proxy. It may not work as expected, and even if it does now it may break at any point in the future!');
+    if(mod.proxyAuthor !== 'caali' || !global.TeraProxy) {
+        mod.warn('You are trying to use Demon\'s Wheel Guide on an unsupported legacy version of tera-proxy.');
+        mod.warn('The module may not work as expected, and even if it works for now, it may break at any point in the future!');
+        mod.warn('It is highly recommended that you download the latest official version from the #proxy channel in https://discord.gg/dUNDDtw');
+    }
 
 
     let boss = null;

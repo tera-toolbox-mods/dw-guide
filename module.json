@@ -1,5 +1,4 @@
 {
-    "disableAutoUpdate": false,
     "name": "dw-guide",
     "author": "Caali / YunfeiG",
     "description": "Guide module for Demon's Wheel",
@@ -10,5 +9,5 @@
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js"
     },
-    "servers": ["https://raw.githubusercontent.com/caali-hackerman/dw-guide/master/"]
+    "servers": ["https://raw.githubusercontent.com/tera-toolbox-mods/dw-guide/master/"]
 }

@@ -34,9 +34,9 @@ module.exports = function DWGuide(mod) {
                 message: msg,
             });
         } else {
-            mod.send('S_CHAT', 1, {
+            mod.send('S_CHAT', 3, {
                 channel: 21, //21 = p-notice, 1 = party
-                authorName: mod.options.niceName,
+                name: mod.options.niceName,
                 message: msg,
             });
         }

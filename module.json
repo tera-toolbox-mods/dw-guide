@@ -4,7 +4,8 @@
     "description": "Guide module for Demon's Wheel",
     "version": "1.0",
     "options": {
-        "niceName": "Demon's Wheel Guide",
+        "cliName": "DW-Guide",
+        "guiName": "Demon's Wheel Guide",
         "settingsVersion": 1,
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js"

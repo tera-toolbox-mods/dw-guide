@@ -8,7 +8,7 @@ const dices = {
     2: {0: 'Hit ALL', 1: 'Don\'t hit WHITE', 2: 'Hit WHITE'},   // white dice
 };
 
-module.exports = function DWGuide(mod) {
+exports.NetworkMod = function(mod) {
     let boss = null;
     let ball = null;
     let color; // 0: red, 1: blue, 2: white
@@ -36,7 +36,7 @@ module.exports = function DWGuide(mod) {
         } else {
             mod.send('S_CHAT', 3, {
                 channel: 21, //21 = p-notice, 1 = party
-                name: mod.options.niceName,
+                name: mod.info.options.cliName || mod.info.rawName,
                 message: msg,
             });
         }
